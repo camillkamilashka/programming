@@ -27,6 +27,7 @@ $$
 
 
 ### 1. По моему варианту 7, используя оператора цикла while, написала программу
+```
 
 #include <stdio.h>
 #include <math.h>
@@ -51,13 +52,84 @@ int main()
 
 }
 
+```
+
+### Ввела в терминал :
+
+```
+gcc lab02.c -Wall -lm
+
+```
+#### и
+```
+./a.out
+```
+#### c шагом 0.1
+
+![Скриншот](32.png "код")
+
+### и мне выдало:
+
 ![Скриншот](44.png "код")
 
-### 2. Напишите программу, используя оператор цикла for
+### 2. Написала программу, используя оператор цикла for
+ 
+ ```
+ #include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    double x, y, s;
+    x = 0.0; 
+    scanf("%lf", &s);
+    int n, i;
+    for (i = 0; i <= n; i++)  
+    {
+        if (x >= -1 && x <= 1)
+          y = exp(-2*sin(x));
+        if (x > 1 && x <= 2)
+          y = x*x - cos(x)/sin(x);
+         printf("%f %f\n", x, y);
+        x += s;
+    }
+
+}
+
+ ```
+
+### Ввела в терминал :
+
+```
+gcc lab02.c -Wall -lm
+
+```
+#### и
+```
+./a.out
+```
+#### c шагом 0.1
+
+![Скриншот](32.png "код")
+
+### и мне выдало:
 
 ![Скриншот](for44.png "код")
 
-### 3. Построила график с использованием gnuplot
+### 3. Построила график с использованием gnuplot. Для этого ввела новый файл plot.gpi, куда внесла данный код:
+
+```
+#!/usr/bin/env -S gnuplot -persist
+# set terminal png enhanced
+# set output "my_graph.png"
+set xlabel "x" 
+set ylabel "f(x)"
+set grid
+set title "График функции f(x)"
+plot "my_graph.txt" with lines title "f(x)"
+
+```
 
 ![Скриншот](kikas.png "код")
 
