@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
 
 int main()
 {
@@ -8,6 +7,7 @@ int main()
     x = 0.0; 
     scanf("%lf", &s);
     int n, i;
+    n = 2 / s;
     for (i = 0; i <= n; i++)  
     {
         if (x >= -1 && x <= 1)
