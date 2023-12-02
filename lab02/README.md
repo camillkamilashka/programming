@@ -84,7 +84,7 @@ int main()
     double x, y, s;
     x = 0.0; 
     scanf("%lf", &s);
-    int n, i;
+    double n, i;
     n = 2 / s;
     for (i = 0; i <= n; i++)  
     {
